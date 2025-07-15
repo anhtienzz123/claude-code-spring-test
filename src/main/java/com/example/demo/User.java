@@ -8,12 +8,11 @@ public class User {
     private String password;
     private String address;
     private String phone;
-    private String phone1;
 
     public User() {}
 
 
-    public User(Long id, String name, Integer age, String email, String password, String address, String phone, String phone1) {
+    public User(Long id, String name, Integer age, String email, String password, String address, String phone) {
         this.id = id;
         this.name = name;
         this.age = age;
@@ -21,7 +20,6 @@ public class User {
         this.password = password;
         this.address = address;
         this.phone = phone;
-        this.phone1 = phone1;
     }
 
     public Long getId() {
@@ -80,13 +78,6 @@ public class User {
         this.phone = phone;
     }
 
-    public String getPhone1() {
-        return phone1;
-    }
-
-    public void setPhone1(String phone1) {
-        this.phone1 = phone1;
-    }
 
     @Override
     public String toString() {
@@ -98,17 +89,15 @@ public class User {
                 ", password='" + password + '\'' +
                 ", address='" + address + '\'' +
                 ", phone='" + phone + '\'' +
-                ", phone1='" + phone1 + '\'' +
                 '}';
     }
 
-    public User(Long id, String name, Integer age, String email, String address, String phone, String phone1) {
+    public User(Long id, String name, Integer age, String email, String address, String phone) {
         this.id = id;
         this.name = name;
         this.age = age;
         this.email = email;
         this.address = address;
         this.phone = phone;
-        this.phone1 = phone1;
     }
 }
